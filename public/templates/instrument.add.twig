@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="container">
+    
+    <div class="row">        
+        <h3 class="title py-3">Ajouter un instrument</h3>        
+    </div>
+</div>
+
+
+<div class="container">
+    
+    <form method="POST">
+    
+    <div class="field">
+        
+        <label class="label" for="name">Nom de l'instrument:</label>        
+        <div class="control">
+            <input class="input" type="text" id="name" name="name" placeholder="nom de l'instrument" required autofocus>
+        </div>
+    </div>
+        
+    <div class="is-vcentered">
+        <button class="button is-primary">Ajouter</button>
+        <a href="/instruments" class="button">Annuler</a>
+    </div>
+    
+    </form>
+    
+</div>
+
+
+
+    
+</div>
+
+{% endblock %}

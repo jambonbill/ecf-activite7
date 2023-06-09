@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="container">
+    
+    <div class="row">        
+        <h3 class="title py-3">Ajouter une marque</h3>        
+    </div>
+</div>
+
+
+<div class="container">
+    
+    <form method="POST">
+    
+    <div class="field">
+        <label class="label" for="brandname">Marque a ajouter :</label>
+        <div class="control">
+            <input class="input" type="text" id="brandname" name="brandname" placeholder="nom de la marque a ajouter" required autofocus>
+        </div>
+    </div>
+        
+    <div class="is-vcentered">
+        <button class="button is-primary">Ajouter</button>
+        <a href="/brands" class="button">Annuler</a>
+    </div>
+    
+    </form>
+    
+</div>
+
+
+
+    
+</div>
+
+{% endblock %}

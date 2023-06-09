@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+#AuthUserFile /var/www/jeudi/.htpasswd
+#AuthType Basic
+#AuthName "La Theorie des Cordes"
+#Require valid-user

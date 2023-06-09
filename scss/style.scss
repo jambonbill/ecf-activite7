@@ -1,0 +1,64 @@
+//sass style pour ECF/ La theorie des cordes
+
+@charset "utf-8";
+
+//@import "../node_modules/bulma/sass/utilities/_all.sass";
+//@import "../node_modules/bulma/sass/grid/columns.sass";
+
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+// Update Bulma's global variables
+$family-sans-serif: 'Roboto', sans-serif;
+
+// Fonts: 
+// - Cherry Bomb One
+// - Roboto
+
+
+// https://github.com/pestak16/ECF/blob/activite6/Charte%20graphique/couleurs-typos.pdf
+$blue: #258CB8;//couleurs-typo.pdf
+$black: #383735;//couleurs-typo.pdf
+$maronClair: #B5752B;//couleurs-typo.pdf
+$maronFonce: #8C4B00;//couleurs-typo.pdf
+
+$turquoise:#258CB8;
+
+$is-primary: $blue;
+$primary: $blue;
+$success: $blue;
+//$success: $green
+//$warning: $yellow
+
+@import "../node_modules/bulma/bulma.sass";
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:$maronFonce;
+    text-decoration: none;
+}
+
+a:hover{
+    color:$blue;
+}
+
+ul {
+    
+    list-style-type: none;
+    float:right;
+    padding-top:2rem;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+li a{
+    color:$maronFonce;    
+    padding:2rem;    
+}

@@ -1,0 +1,49 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="container">
+    
+    <div class="row">
+        
+        <div class="col-12 col-md-8">      
+            
+        </div>        
+
+        <h1 class="title">Home - La Theorie des cordes</h1>
+
+    </div>
+</div>
+
+<p><br></p>
+
+
+<div class="container">
+    <div class="row">
+
+    {% for item in items %}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="card">
+            <div class="img">
+                <a href="{{ item.permalink }}"><img src="{{ item.url_img|default('img/thumbnail-600x350.png') }}" alt="{{ item.title }}"></a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><a href="{{ item.permalink }}">{{ item.title }}</a></h5>
+                
+                <p class="card-text smaller">{{ item.description_short }}</p>        
+                <!--<p class="text-muted smaller"><i>{{ item.tags }}</i></p>-->
+                <div class="card-arrow">
+                    <a href="{{ item.permalink }}">
+                    <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change:transform" aria-label="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H3v2h21.15l-7.58 7.57L18 26l10-10L18 6z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}

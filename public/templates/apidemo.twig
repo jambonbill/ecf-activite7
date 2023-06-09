@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="container">
+    
+    <div class="row">        
+        <h3 class="title py-3">Nos API</h3>
+    </div>
+</div>
+
+
+<div class="container">
+    
+    <div class="columns">
+        
+        <div class="column">
+            <button class="button is-primary" id="btnBrands">/api/brands</button>
+        </div>
+        
+        <div class="column">
+            <button class="button is-primary" id="btnInstruments">/api/instruments</button>            
+        </div>
+        
+        <div class="column">
+            <button class="button is-primary" id="btnTypes">/api/types</button>            
+        </div>
+        
+    </div>
+            
+    <div id="DOMTOM">
+        {DOM}
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+
+{% endblock %}

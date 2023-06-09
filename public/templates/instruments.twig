@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="container">    
+    <div class="row">        
+        <h3 class="title py-3">Les instruments</h3>        
+    </div>
+</div>
+
+<div class="container">
+    
+    <a href="/instrument/add" class="py-3"><i class="fas fa-square-plus"></i> Ajouter un instrument</a>
+
+    <table class="table is-hoverable">
+        <thead>
+            <tr>
+              <th>Instrument</th>
+              <th>Marque</th>
+              <th>Type</th>
+              <th>Prix</th>
+              <th>Updated at</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+        {% for item in entities %}    
+            <tr>
+            <td>{{ item.instrument }}</td>                                            
+            <td><i>{{ item.stock }}</i></td>            
+            <td><i>{{ item.stock }}</i></td>            
+            <td>{{ item.prix }} EUR</td>            
+            <td><i>{{ item.date_modif }}</i></td>            
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}
